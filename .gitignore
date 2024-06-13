@@ -1,0 +1,8 @@
+
+target/
+dbt_packages/
+logs/
+.gitkeep
+.vscode/settings.json
+.user.yml
+.DS_Store

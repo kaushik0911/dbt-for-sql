@@ -33,5 +33,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   intro:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    taxi_trips_project:
       +materialized: view
+    crypto_project:
+      +materialized: table
+
+seeds:
+  intro:
+    raw_crypto_data:
+      column_types:
+        currency: text
+        detail_date: text
+        closing_price: text
+        24_hour_open: float
+        24h_high_usd: float
+        24h_low_usd: float
